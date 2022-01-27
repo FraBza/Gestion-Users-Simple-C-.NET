@@ -1,0 +1,15 @@
+C:\Users\Soufiane\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Release\WindowsFormsApp1.Form1.resources
+C:\Users\Soufiane\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Release\WindowsFormsApp1.Form2.resources
+C:\Users\Soufiane\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Release\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\Soufiane\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Release\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\Soufiane\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Release\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\Soufiane\source\repos\WindowsFormsApp1\WindowsFormsApp1\bin\Release\WindowsFormsApp1.exe.config
+C:\Users\Soufiane\source\repos\WindowsFormsApp1\WindowsFormsApp1\bin\Release\WindowsFormsApp1.exe
+C:\Users\Soufiane\source\repos\WindowsFormsApp1\WindowsFormsApp1\bin\Release\WindowsFormsApp1.pdb
+C:\Users\Soufiane\source\repos\WindowsFormsApp1\WindowsFormsApp1\bin\Release\MySql.Data.dll
+C:\Users\Soufiane\source\repos\WindowsFormsApp1\WindowsFormsApp1\bin\Release\Google.Protobuf.dll
+C:\Users\Soufiane\source\repos\WindowsFormsApp1\WindowsFormsApp1\bin\Release\BouncyCastle.Crypto.dll
+C:\Users\Soufiane\source\repos\WindowsFormsApp1\WindowsFormsApp1\bin\Release\MySql.Data.xml
+C:\Users\Soufiane\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Release\WindowsFormsApp1.csproj.CopyComplete
+C:\Users\Soufiane\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Release\WindowsFormsApp1.exe
+C:\Users\Soufiane\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Release\WindowsFormsApp1.pdb
