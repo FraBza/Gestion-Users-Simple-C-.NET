@@ -1,5 +1,5 @@
 # GestionUsers-1st-Project-C-.NET
-🖥️ Ceci est une simple application faite pour moi et ceux qui veulent tester pourquoi pas 🖥️
+🖥️ Ceci est une simple application faite par moi pour simplement gerer des utilisateur de base de donées à partir d'une interface graphique Simple ! 🖥️
 
 Elle n'est pas pas spécialement utile mais le code est selon moi sympa pour un début et le disign aussi
 J'ai effectivement utiliser Mysql, C#, .NET. Il y à une interface graphique et tout est dans le repository.
