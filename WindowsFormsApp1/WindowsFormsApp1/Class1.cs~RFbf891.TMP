@@ -1,0 +1,92 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using MySql.Data.MySqlClient;
+
+namespace WindowsFormsApp1
+{
+   
+    public class BDD
+   
+    {
+
+        public MySqlConnection cnn;
+        public string connexionString = null;
+        public MySqlDataReader myReader;
+        public class Utilisateur
+            {
+            public string Login { get; set; }
+            public string Motdepasse { get; set; }
+
+            public string Iduser { get; set; }
+
+            
+            }
+        
+        
+        
+        public void Connexion()
+        {
+
+            
+            connexionString = "server=localhost;database=login;uid=root;pwd=root;";
+            cnn = new MySqlConnection(connexionString);
+            try
+            {
+                cnn.Open();
+                //MessageBox.Show("Connection Open ! ");
+            
+            }
+            catch (Exception )
+            {
+                Application.Exit();
+                
+                MessageBox.Show(ToString());
+               
+                
+
+            }
+           
+        }
+        
+
+        public bool Loguser(string utilisateur, string motdepasse,BDD Mabase,Utilisateur Luser)
+        {
+
+
+
+
+
+                Mabase.cnn.Close();
+                MySqlCommand SelectCommand = Mabase.cnn.CreateCommand();
+
+                SelectCommand.CommandText = " select * from login where user='" + utilisateur + "' and motpasse='" + motdepasse + "'";
+            Mabase.cnn.Open();
+            
+                 myReader = SelectCommand.ExecuteReader();
+
+                while (myReader.Read())
+                {
+                    Luser.Login = myReader.GetValue(1).ToString();
+                    Luser.Motdepasse = myReader.GetValue(1).ToString();
+                Luser.Iduser = myReader.GetValue(0).ToString();
+
+                if (Luser.Login != "")
+                {
+                    myReader.Close();
+                    SelectCommand.Dispose();
+                    return true;
+                }
+                        
+                }
+                if (Luser.Login == "")
+                    return false;
+
+                return false;
+            
+        }
+    }
+}

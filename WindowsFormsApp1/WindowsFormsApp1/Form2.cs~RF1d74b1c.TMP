@@ -1,0 +1,109 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using static WindowsFormsApp1.BDD;
+
+namespace WindowsFormsApp1
+{
+
+    public partial class Form2 : Form
+    {
+        public BDD Bbase = new BDD();
+        public Utilisateur userloc = new Utilisateur();
+        public bool log = false;
+        public int compteur = 3;
+
+
+
+        public Form2()
+        {
+
+
+            InitializeComponent();
+            Bbase.Connexion();
+
+
+        }
+
+
+        private void Form2_Closing(object sender, FormClosingEventArgs e)
+        {
+            if (log == false)
+            {
+
+                Application.Exit();
+            }
+            else
+            {
+
+            }
+
+        }
+
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
+        private void Button1_Click_1(object sender, EventArgs e)
+        {
+            log = Bbase.Loguser(textBox1.Text, textBox2.Text, Bbase, userloc);
+
+            if (log == true)
+
+            {
+                MessageBox.Show("Bonjour " + userloc.Login + " bienvenue");
+                Close();
+            }
+
+            else
+            {
+                compteur -= 1;
+                label1.Text = "Nombre d'essais restant  : "+compteur.ToString();
+
+
+                MessageBox.Show("mauvais id");
+                if (compteur == 0)
+                {
+                    Close();
+                }
+            }
+
+
+
+        }
+
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TextBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
+}
+    
